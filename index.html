@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Git ++ Github</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<!-- TELA INICIAL -->
+<div id="start-screen">
+    <button id="start-btn">Iniciar</button>
+</div>
+
+<!-- SITE -->
+<div id="app">
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <h1>Material relacionado ao curso de Git</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>O que é Git, o que é GitHub e qual a diferença</h2>
+
+            <article>
+                <h3>O que é Git</h3>
+                <p>
+                    Git é um sistema de controle de versão distribuído utilizado para rastrear alterações em arquivos.
+                </p>
+            </article>
+
+            <article>
+                <h3>O que é GitHub</h3>
+                <p>
+                    GitHub é uma plataforma online que hospeda repositórios Git e facilita colaboração.
+                </p>
+            </article>
+
+            <article>
+                <h3>Diferença</h3>
+                <p>
+                    Git é uma ferramenta local, GitHub é um serviço online.
+                </p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Curso de Git</p>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+    const btn = document.getElementById("start-btn");
+    const screen = document.getElementById("start-screen");
+    const app = document.getElementById("app");
+
+    app.style.display = "none";
+
+    btn.addEventListener("click", () => {
+        screen.style.display = "none";
+        app.style.display = "block";
+    });
+</script>
+
+
+</body>
+</html>
